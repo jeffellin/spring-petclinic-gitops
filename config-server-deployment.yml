@@ -1,0 +1,35 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: config-server
+spec:
+  selector:
+    app: petclinic
+    component: configserver
+  type:  ClusterIP
+  ports:
+  - name:  http
+    port:  8888
+    targetPort:  8888
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: config-server-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: petclinic
+      component: configserver
+  template:
+    metadata:
+      labels:
+        app: petclinic
+        component: configserver
+    spec:
+      containers:
+      - name: config-server
+        image: ellinj/pet-clinic-config-server:latest
+        ports:
+            - containerPort: 8888
