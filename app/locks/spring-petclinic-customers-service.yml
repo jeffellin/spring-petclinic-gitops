@@ -3,4 +3,4 @@
 ---
 image:
   #@overlay/match missing_ok=True
-  spring-petclinic-customers-service: 0.11.0
+  springpetcliniccustomersservice: 0.12.0
