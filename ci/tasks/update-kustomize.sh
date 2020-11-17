@@ -1,7 +1,7 @@
 ls -la
 cp -r source-code-gitops/. gitops
 
-$FILE=gitops/app/kustomization.yml
+FILE=gitops/app/kustomization.yml
 
 if [ -f $FILE ]; then
   echo "file already exists"
@@ -9,7 +9,6 @@ if [ -f $FILE ]; then
 fi
 
 cd gitops/app
-rm kustomization.yml
 ytt -f kustomization.tmpl -f locks > kustomization.yml 
 
 git config --global user.name "YOUR NAME"
