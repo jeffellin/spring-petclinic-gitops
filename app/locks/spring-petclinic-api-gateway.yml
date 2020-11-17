@@ -3,4 +3,4 @@
 ---
 image:
   #@overlay/match missing_ok=True
-  spring-petclinic-api-gateway: 0.9.0
+  springpetclinicapigateway: 0.10.0
