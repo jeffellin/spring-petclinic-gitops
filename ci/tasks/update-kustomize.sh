@@ -15,5 +15,5 @@ ytt -f temp.yml -f locks > kustomization.yml
 rm temp.yml
 git config --global user.name "YOUR NAME"
 git config --global user.email "none@none.com"
-git add -A .
-git diff-index --quiet HEAD || git commit -m "update by ci"
+git add -A
+git commit -m "update by ci" || true
