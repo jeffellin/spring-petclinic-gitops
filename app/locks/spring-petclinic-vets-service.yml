@@ -1,0 +1,4 @@
+#@data/values
+---
+springpetclinicvetsservice:
+  image: 0.6.0
