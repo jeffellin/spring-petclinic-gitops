@@ -10,7 +10,7 @@ fi
 
 cd gitops/app
 ytt version
-mv kustomization.tmpl temp.yml
+cp kustomization.tmpl temp.yml
 ytt -f temp.yml -f locks > kustomization.yml 
 rm temp.yml
 git config --global user.name "YOUR NAME"
