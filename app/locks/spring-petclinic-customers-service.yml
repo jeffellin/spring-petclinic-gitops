@@ -1,0 +1,4 @@
+#@data/values
+---
+spring-petclinic-customers-service:
+  image: 0.5.0
