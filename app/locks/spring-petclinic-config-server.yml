@@ -3,4 +3,4 @@
 ---
 image:
   #@overlay/match missing_ok=True
-  spring-petclinic-config-server: 0.7.0
+  spring-petclinic-config-server: 0.9.0
