@@ -9,6 +9,7 @@ if [ -f $FILE ]; then
 fi
 
 cd gitops/app
+ytt version
 ytt -f kustomization.tmpl -f locks > kustomization.yml 
 
 git config --global user.name "YOUR NAME"
