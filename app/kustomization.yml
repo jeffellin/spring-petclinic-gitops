@@ -1,0 +1,25 @@
+images:
+- name: config
+  newName: ellinj/spring-petclinic-config-server
+  newTag: 0.10.0
+- name: gateway
+  newName: ellinj/spring-petclinic-api-gateway
+  newTag: 0.10.0
+- name: customers
+  newName: ellinj/module=spring-petclinic-customers-service
+  newTag: 0.12.0
+- name: vets
+  newName: ellinj/pring-petclinic-vets-service
+  newTag: 0.10.0
+- name: visits
+  newName: ellinj/module=spring-petclinic-visits-service
+  newTag: 0.14.0
+resources:
+- config-server-deployment.yml
+- customer-service-deployment.yml
+- gw-service-deployment.yml
+- istio-virtual-service.yml
+- vets-service-deployment.yml
+- visit-service-deployment.yml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
