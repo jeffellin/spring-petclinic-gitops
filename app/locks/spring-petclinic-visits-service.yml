@@ -1,4 +1,4 @@
 #@data/values
 ---
-spring-petclinic-visits-service:
-  image: 0.7.0
+springpetclinicvisitsservice:
+  image: 0.8.0
