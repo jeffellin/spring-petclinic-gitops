@@ -1,4 +1,4 @@
 #@data/values
 ---
-spring-petclinic-api-gateway:
-  image: 0.4.0
+springpetclinicapigateway:
+  image: 0.6.0
