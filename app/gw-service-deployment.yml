@@ -1,0 +1,39 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: api-gateway
+spec:
+  selector:
+    app: petclinic
+    component: api-gateway
+  type:  LoadBalancer
+  ports:
+  - name:  http
+    port:  8080
+    targetPort:  8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-gateway-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: petclinic
+      component: api-gateway
+  template:
+    metadata:
+      labels:
+        app: petclinic
+        component: api-gateway
+    spec:
+      containers:
+      - name:  api-gateway
+        image: ellinj/petclinc-api-gateway
+        imagePullPolicy: Always
+        ports:
+            - containerPort: 8080
+        env:
+          - name: SPRING_PROFILES_ACTIVE
+            value: docker

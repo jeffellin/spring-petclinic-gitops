@@ -1,0 +1,40 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: customer-service
+spec:
+  selector:
+    app: petclinic
+    component: customer-service
+  type:  ClusterIP
+  ports:
+  - name:  http
+    port:  8080
+    targetPort:  8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customer-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: petclinic
+      component: customer-service
+  template:
+    metadata:
+      labels:
+        app: petclinic
+        component: customer-service
+    spec:
+      containers:
+      - name:  customer-service
+        image: ellinj/pet-clinic-customer-service:latest
+        ports:
+            - containerPort: 8080
+        env:
+          - name: SPRING_PROFILES_ACTIVE
+            value: docker
+          - name: SERVER_PORT
+            value: "8080"

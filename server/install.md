@@ -5,4 +5,5 @@
 2. create petclinic namespace 
    ```bash
    kubectl  create namespace petclinic
+   kubectl label namespace petclinic istio-injection=enabled
    ```
