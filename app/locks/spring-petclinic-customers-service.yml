@@ -1,4 +1,6 @@
 #@data/values
+#@ load("@ytt:overlay", "overlay")
 ---
-springpetcliniccustomersservice:
-  image: 0.8.0
+image:
+  #@overlay/match missing_ok=True
+  spring-petclinic-customers-service: 0.10.0
