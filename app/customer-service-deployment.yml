@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name:  customer-service
-        image: ellinj/pet-clinic-customer-service:latest
+        image: customers
         ports:
             - containerPort: 8080
         env:

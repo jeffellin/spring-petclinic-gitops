@@ -1,0 +1,36 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: ellinj/carvel
+    tag: latest
+
+inputs:
+  - name: source-code-gitops
+
+
+outputs:
+  - name: gitops
+
+caches:
+  - path: maven
+
+params:
+  MVN_PARAMS: ""
+  M2_SETTINGS_CORP_REPO_USERNAME: ""
+  M2_SETTINGS_CORP_REPO_PASSWORD: ""
+  M2_SETTINGS_ORG_REPO_USERNAME: ""
+  M2_SETTINGS_ORG_REPO_PASSWORD: ""
+  M2_SETTINGS_CENTRAL_MIRROR_URI: ""
+  M2_SETTINGS_ORG_MIRROR_URI: ""
+  M2_SETTINGS_PROXY_HOST: ""
+  M2_SETTINGS_PROXY_PORT: ""
+  ARTIFACT_TYPE: ""
+
+
+run:
+  path: /bin/bash
+  args:
+    - source-code-gitops/ci/tasks/update-kustomize.sh

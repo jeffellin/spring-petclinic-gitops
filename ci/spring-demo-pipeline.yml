@@ -1,0 +1,19 @@
+resources:
+- name: source-code-gitops
+  type: git
+  source:
+    uri: git@github.com:jeffellin/spring-petclinic-gitops.git
+    branch: master
+    private_key: ((pipeline-secret.git-private_key))
+jobs:
+  - name: build-project
+    serial: true
+    plan:
+      - get: source-code-gitops
+        trigger: true
+      - task: update-kustomize
+        file: source-code/ci/tasks/update-kustomize-task.yml
+      - put: source-code-gitops 
+        params: 
+          repository: gitops
+          force: true

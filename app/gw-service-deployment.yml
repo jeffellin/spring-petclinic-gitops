@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name:  api-gateway
-        image: ellinj/petclinc-api-gateway
+        image: gateway
         imagePullPolicy: Always
         ports:
             - containerPort: 8080
