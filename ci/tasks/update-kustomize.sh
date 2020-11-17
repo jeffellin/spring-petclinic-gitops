@@ -9,9 +9,10 @@ if [ -f $FILE ]; then
 fi
 
 cd gitops/app
-ytt -f kustomization.yml -f locks 
+rm kustomization.yml
+ytt -f kustomization.tmpl -f locks > kustomization.yml 
 
-# git config --global user.name "YOUR NAME"
-#git config --global user.email "none@none.com"
-#git add .
-#git commit -m "update by ci"
+git config --global user.name "YOUR NAME"
+git config --global user.email "none@none.com"
+git add .
+git commit -m "update by ci"
