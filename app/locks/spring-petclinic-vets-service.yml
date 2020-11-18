@@ -3,4 +3,4 @@
 ---
 image:
   #@overlay/match missing_ok=True
-  springpetclinicvetsservice: 0.11.0
+  springpetclinicvetsservice: 0.12.0
