@@ -1,3 +1,17 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  prometheus-server
+spec:
+  selector:
+    app: petclinic
+    component:  prometheus-server
+  type:  ClusterIP
+  ports:
+  - name:  http
+    port:  9090
+    targetPort:  9090
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -6,11 +20,13 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: prometheus
+      app: petclinic
+      component: prometheus-server
   template:
     metadata:
       labels:
-        app: prometheus
+        app: petclinic
+        component: prometheus-server
     spec:
       automountServiceAccountToken: true
       containers:

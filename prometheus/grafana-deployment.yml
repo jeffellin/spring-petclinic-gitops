@@ -1,0 +1,45 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  grafana-service
+spec:
+  selector:
+    aapp: petclinic
+    component: grafana
+  type:  ClusterIP
+  ports:
+  - name:  http
+    port:  3000
+    targetPort:  3000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grafana-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: petclinic
+      component: grafana
+  template:
+    metadata:
+      labels:
+        app: petclinic
+        component: grafana
+    spec:
+      containers:
+      - name: grafana-cont
+        image: ellinj/spring-petclinic-grafana
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+      
+      
