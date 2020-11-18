@@ -27,6 +27,10 @@ spec:
       labels:
         app: petclinic
         component: vets-service
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8081"
+        prometheus.io/path: "/actuator/prometheus"
     spec:
       containers:
       - name:  vets-service
