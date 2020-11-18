@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: prometheus-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: prometheus
@@ -12,6 +12,7 @@ spec:
       labels:
         app: prometheus
     spec:
+      automountServiceAccountToken: true
       containers:
       - name: prometheus-cont
         image: prom/prometheus
