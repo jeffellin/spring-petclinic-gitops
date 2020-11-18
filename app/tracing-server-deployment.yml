@@ -33,13 +33,13 @@ spec:
         image: openzipkin/zipkin
         ports:
             - containerPort: 9411
-      resources:
-        requests:
-          memory: "64Mi"
-          cpu: "250m"
-        limits:
-          memory: "512Mi"
-          cpu: "500m"
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
         env: 
          - name: JAVA_OPTS
            value: -XX:+UnlockExperimentalVMOptions -Djava.security.egd=file:/dev/./urandom
