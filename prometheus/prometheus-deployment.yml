@@ -27,6 +27,9 @@ spec:
       labels:
         app: petclinic
         component: prometheus-server
+      annotations:
+        #need outbond access to api gateway before 
+        traffic.sidecar.istio.io/excludeOutboundIPRanges: "0.0.0.0/0"
     spec:
       automountServiceAccountToken: true
       containers:
