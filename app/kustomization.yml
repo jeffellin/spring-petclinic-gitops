@@ -6,13 +6,13 @@ images:
   newName: ellinj/spring-petclinic-api-gateway
   newTag: 0.10.0
 - name: customers
-  newName: ellinj/module=spring-petclinic-customers-service
+  newName: ellinj/spring-petclinic-customers-service
   newTag: 0.13.0
 - name: vets
-  newName: ellinj/pring-petclinic-vets-service
+  newName: ellinj/spring-petclinic-vets-service
   newTag: 0.11.0
 - name: visits
-  newName: ellinj/module=spring-petclinic-visits-service
+  newName: ellinj/spring-petclinic-visits-service
   newTag: 0.15.0
 resources:
 - config-server-deployment.yml
