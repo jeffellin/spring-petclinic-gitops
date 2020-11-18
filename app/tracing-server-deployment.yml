@@ -1,0 +1,45 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: tracing-server
+spec:
+  selector:
+    app: petclinic
+    component: tracingserver
+  type:  ClusterIP
+  ports:
+  - name:  http
+    port:  8888
+    targetPort:  8888
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tracing-server-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: petclinic
+      component: tracingserver
+  template:
+    metadata:
+      labels:
+        app: petclinic
+        component: tracingserver
+    spec:
+      containers:
+      - name: tracing-server
+        image: openzipkin/zipkin
+        ports:
+            - containerPort: 9411
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "250m"
+        limits:
+          memory: "512Mi"
+          cpu: "500m"
+        env: 
+         - name: JAVA_OPTS
+           value: -XX:+UnlockExperimentalVMOptions -Djava.security.egd=file:/dev/./urandom
