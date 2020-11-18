@@ -21,5 +21,6 @@ resources:
 - istio-virtual-service.yml
 - vets-service-deployment.yml
 - visit-service-deployment.yml
+- tracing-server-deployment.yml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
