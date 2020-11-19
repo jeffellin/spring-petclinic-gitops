@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: petclinic-gke-dev
+spec:
+  destination:
+    name: ''
+    namespace: petclinic
+    server: 'https://35.202.215.118'
+  source:
+    path: app
+    repoURL: 'https://github.com/jeffellin/spring-petclinic-gitops'
+    targetRevision: HEAD
+  project: default
