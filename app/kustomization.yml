@@ -14,6 +14,9 @@ images:
 - name: visits
   newName: ellinj/spring-petclinic-visits-service
   newTag: 0.18.0
+- name: httpbin
+  newName: ellinj/spring-petclinic-httpbin-service
+  newTag: 0.18.0
 resources:
 - config-server-deployment.yml
 - customer-service-deployment.yml
@@ -22,5 +25,6 @@ resources:
 - vets-service-deployment.yml
 - visit-service-deployment.yml
 - tracing-server-deployment.yml
+- httpbin-server-deployment.yml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
