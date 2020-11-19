@@ -13,7 +13,7 @@ images:
   newTag: 0.14.0
 - name: visits
   newName: ellinj/spring-petclinic-visits-service
-  newTag: 0.16.0
+  newTag: 0.18.0
 resources:
 - config-server-deployment.yml
 - customer-service-deployment.yml
