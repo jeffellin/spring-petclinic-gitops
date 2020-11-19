@@ -1,0 +1,35 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: httpbin-service
+spec:
+  selector:
+    app: petclinic
+    component: httpbin
+  type:  ClusterIP
+  ports:
+  - name:  http
+    port:  8888
+    targetPort:  8888
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpbin-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: petclinic
+      component: httpbin
+  template:
+    metadata:
+      labels:
+        app: petclinic
+        component: httpbin
+    spec:
+      containers:
+      - name: httpbin-service
+        image: httpbin
+        ports:
+            - containerPort: 8888
