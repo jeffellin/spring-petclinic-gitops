@@ -15,7 +15,7 @@ images:
   newName: ellinj/spring-petclinic-visits-service
   newTag: 0.18.0
 - name: httpbin
-  newName: ellinj/spring-petclinic-httpbin-service
+  newName: ellinj/spring-petclinic-httpbin
   newTag: 0.18.0
 resources:
 - config-server-deployment.yml
