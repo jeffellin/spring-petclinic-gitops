@@ -31,5 +31,10 @@ spec:
       containers:
       - name: httpbin-service
         image: httpbin
+        env:
+          - name: SPRING_PROFILES_ACTIVE
+            value: docker
+          - name: SERVER_PORT
+            value: "8080"
         ports:
             - containerPort: 8888
