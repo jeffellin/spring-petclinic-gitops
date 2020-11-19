@@ -37,4 +37,4 @@ spec:
           - name: SERVER_PORT
             value: "8080"
         ports:
-            - containerPort: 8888
+            - containerPort: 8080
