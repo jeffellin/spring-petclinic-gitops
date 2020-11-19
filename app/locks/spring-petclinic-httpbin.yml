@@ -1,0 +1,6 @@
+#@data/values
+#@ load("@ytt:overlay", "overlay")
+---
+image:
+  #@overlay/match missing_ok=True
+  springpetclinichttpbin: 0.2.0
