@@ -13,6 +13,7 @@ ytt version
 cp kustomization.tmpl temp.yml
 ytt -f temp.yml -f locks > kustomization.yml 
 rm temp.yml
+cat kustomization.yml
 git config --global user.name "Councourse CI"
 git config --global user.email "none@none.com"
 git add -A
