@@ -38,4 +38,4 @@ spec:
           - name: SPRING_PROFILES_ACTIVE
             value: docker
           - name: SERVER_PORT
-            value: 8080
+            value: "8080"
