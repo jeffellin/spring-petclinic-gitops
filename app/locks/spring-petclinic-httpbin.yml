@@ -3,4 +3,4 @@
 ---
 image:
   #@overlay/match missing_ok=True
-  springpetclinichttpbin: 0.2.0
+  springpetclinichttpbin: 0.4.0
