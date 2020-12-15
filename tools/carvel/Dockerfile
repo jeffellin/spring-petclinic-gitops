@@ -5,5 +5,7 @@ RUN apt install -y git
 RUN apt-get -y update && apt-get install -y wget perl ca-certificates && update-ca-certificates && rm -rf /var/lib/apt/lists/*
 
 RUN bash -c "set -eo pipefail; wget -O- https://k14s.io/install.sh | bash"
+RUN bash -c "wget https://github.com/vmware-tanzu/kpack-cli/releases/download/v0.1.4/kp-linux-0.1.4; cp kp-linux-0.1.4 /usr/local/bin/kp; chmod +x /usr/local/bin/kp"
 
-RUN ytt version && kapp version && kbld version && kwt version && imgpkg version && vendir version
+
+RUN ytt version && kapp version && kbld version && kwt version && imgpkg version && vendir version && kp version
