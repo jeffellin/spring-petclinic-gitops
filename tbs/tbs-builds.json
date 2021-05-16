@@ -13,7 +13,7 @@
            },
            {
                    "name":"spring-petclinic-api-gateway",
-                   "commit":"f6d325feb733126820e1bcebe7f97060f388d215"
+                   "commit":"1f30c94f5df8a26536089cfb465f69b925234fd4"
            },
            {
                    "name":"spring-petclinic-vets-service",
