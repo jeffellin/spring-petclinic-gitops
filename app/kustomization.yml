@@ -1,16 +1,4 @@
 images:
-- name: config
-  newName: ellinj/spring-petclinic-config-server
-  newTag: 0.18.0
-- name: customers
-  newName: ellinj/spring-petclinic-customers-service
-  newTag: 0.21.0
-- name: gateway
-  newName: ellinj/spring-petclinic-api-gateway
-  newTag: 0.22.0
-- name: httpbin
-  newName: ellinj/spring-petclinic-httpbin
-  newTag: 0.7.0
 - digest: sha256:3a91cd675c78ba5c0ee25c6fed6d00be8a39f7b92cdb2a9b4a5294aa1203dfd6
   name: spring-petclinic-api-gateway
   newName: harbor.ellin.net/dev/spring-petclinic-api-gateway
@@ -26,12 +14,6 @@ images:
 - digest: sha256:9ec44b5172ed0f2d4fc6f4c31c1d8fd748c743c89440adf381133c352d12c534
   name: spring-petclinic-visits-service
   newName: harbor.ellin.net/dev/spring-petclinic-visits-service
-- name: vets
-  newName: ellinj/spring-petclinic-vets-service
-  newTag: 0.16.0
-- name: visits
-  newName: ellinj/spring-petclinic-visits-service
-  newTag: 0.21.0
 resources:
 - config-server-deployment.yml
 - customer-service-deployment.yml
