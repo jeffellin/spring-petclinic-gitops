@@ -4,12 +4,12 @@
    "registry":"harbor.ellin.net/stage",
    "builds":[
            {
-                   "name":"spring-petclinic-vets-services",
+                   "name":"spring-petclinic-vets-service",
                    "commit":"5ea144bca19dbafebc299926f171a3272af4a43c"
                   
            },
            {
-                   "name":"spring-petclinic-visits-services",
+                   "name":"spring-petclinic-visits-service",
                    "commit":"79030fa31b566427a5575fbbf3a3d924194ea214"
            }
    ]
