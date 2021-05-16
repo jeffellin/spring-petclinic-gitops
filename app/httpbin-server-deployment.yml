@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: httpbin-service
-        image: httpbin
+        image: spring-petclinic-httpbin
         env:
           - name: SPRING_PROFILES_ACTIVE
             value: docker
