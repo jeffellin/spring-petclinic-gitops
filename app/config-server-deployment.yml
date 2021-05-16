@@ -30,6 +30,6 @@ spec:
     spec:
       containers:
       - name: config-server
-        image: config
+        image: spring-petclinic-config-server
         ports:
             - containerPort: 8888
