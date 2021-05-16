@@ -11,7 +11,9 @@ images:
 - name: httpbin
   newName: ellinj/spring-petclinic-httpbin
   newTag: 0.7.0
-- name: stage-spring-petclinic-vets-service
+- digest: sha256:e8c44369059ac8788a233384ee1f8f208db0b790a824da4d81f2890bb225f458
+  name: stage-spring-petclinic-vets-service
+  newName: stage/spring-petclinic-vets-service
 - name: vets
   newName: ellinj/spring-petclinic-vets-service
   newTag: 0.16.0
