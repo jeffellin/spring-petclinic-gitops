@@ -4,13 +4,24 @@
    "registry":"harbor.ellin.net/stage",
    "builds":[
            {
+                   "name":"spring-petclinic-config-server",
+                   "commit":"19fb5d84d43e3d0457773b01c9b4543df548d99e"
+           },
+           {
+                   "name":"spring-petclinic-httpbin",
+                   "commit":"7d6618426f12c0a253664b4588abd663b9aa884d"
+           },
+           {
+                   "name":"spring-petclinic-api-gateway",
+                   "commit":"f6d325feb733126820e1bcebe7f97060f388d215"
+           },
+           {
                    "name":"spring-petclinic-vets-service",
-                   "commit":"5ea144bca19dbafebc299926f171a3272af4a43c"
-                  
+                   "commit":"0a2a7d6f8d8564d66afff88eb9510f3a2b14a820"
            },
            {
                    "name":"spring-petclinic-visits-service",
-                   "commit":"79030fa31b566427a5575fbbf3a3d924194ea214"
+                   "commit":"51ec59b452a098d442056219bf5e3570975b1a05"
            }
    ]
 }
