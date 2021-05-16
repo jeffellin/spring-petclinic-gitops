@@ -5,7 +5,7 @@ images:
 - digest: sha256:3a91cd675c78ba5c0ee25c6fed6d00be8a39f7b92cdb2a9b4a5294aa1203dfd6
   name: spring-petclinic-api-gateway
   newName: harbor.ellin.net/dev/spring-petclinic-api-gateway
-- digest: sha256:05101a71e441a2c0f1763bf7d021713ac9bdf88986a17ba1184087886cd93c76
+- digest: sha256:a7a3138e4f23d2c5abb82f95226f3c92d9d0b7311f9bcdf5b760f30cb284edbc
   name: spring-petclinic-config-server
   newName: harbor.ellin.net/stage/spring-petclinic-config-server
 - digest: sha256:7cabacb327233afe68ad94d0281f48a13dd921ca8da9535c52e2b17abbb2c187
