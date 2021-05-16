@@ -11,6 +11,9 @@ images:
 - name: httpbin
   newName: ellinj/spring-petclinic-httpbin
   newTag: 0.7.0
+- digest: sha256:8ab3bbc454f41ccd11d41000a39035b57be77a8f6d82fdb8653f52c0fda73fa9
+  name: spring-petclinic-config-server
+  newName: harbor.ellin.net/dev/spring-petclinic-config-server
 - digest: sha256:1061938fab4bbb30ed83b0216c62808a90b9efe9d5a4dc08c6b3056e5c06e997
   name: spring-petclinic-vets-service
   newName: harbor.ellin.net/dev/spring-petclinic-vets-service
