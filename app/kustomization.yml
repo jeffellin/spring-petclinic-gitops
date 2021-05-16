@@ -2,21 +2,24 @@ images:
 - name: config
   newName: ellinj/spring-petclinic-config-server
   newTag: 0.18.0
-- name: gateway
-  newName: ellinj/spring-petclinic-api-gateway
-  newTag: 0.22.0
 - name: customers
   newName: ellinj/spring-petclinic-customers-service
   newTag: 0.21.0
+- name: gateway
+  newName: ellinj/spring-petclinic-api-gateway
+  newTag: 0.22.0
+- name: httpbin
+  newName: ellinj/spring-petclinic-httpbin
+  newTag: 0.7.0
+- name: stage-spring-petclinic-vets-service
+  newName: harbor.ellin.net/stage/spring-petclinic-vets-service
+  newTag: latest
 - name: vets
   newName: ellinj/spring-petclinic-vets-service
   newTag: 0.16.0
 - name: visits
   newName: ellinj/spring-petclinic-visits-service
   newTag: 0.21.0
-- name: httpbin
-  newName: ellinj/spring-petclinic-httpbin
-  newTag: 0.7.0
 resources:
 - config-server-deployment.yml
 - customer-service-deployment.yml
