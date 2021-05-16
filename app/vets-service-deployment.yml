@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name:  vets-service
-        image:  vets
+        image:  spring-petclinic-vets-service
         imagePullPolicy: Always
         ports:
             - containerPort: 8080

@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name:  api-gateway
-        image: gateway
+        image: spring-petclinic-api-gateway
         imagePullPolicy: Always
         ports:
             - containerPort: 8080
