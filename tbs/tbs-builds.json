@@ -9,7 +9,7 @@
            },
            {
                    "name":"spring-petclinic-httpbin",
-                   "commit":"7d6618426f12c0a253664b4588abd663b9aa884d"
+                   "commit":"3c8c04c87bc2c9a9771f84b2dfaf3a80463bdc10"
            },
            {
                    "name":"spring-petclinic-api-gateway",
