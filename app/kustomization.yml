@@ -3,7 +3,7 @@ images:
   newName: ellinj/spring-petclinic-customers-service
   newTag: 0.21.0
 - name: spring-petclinic-api-gateway
-  newName: "null"
+  newName: harbor.ellin.net/dev/spring-petclinic-api-gateway
 - digest: sha256:212148e05a2a7aa9fa0cbfb641018635b91f35bcdb1464729719d5e6d3450ec0
   name: spring-petclinic-config-server
   newName: harbor.ellin.net/dev/spring-petclinic-config-server
