@@ -1,6 +1,0 @@
-#@data/values
-#@ load("@ytt:overlay", "overlay")
----
-image:
-  #@overlay/match missing_ok=True
-  springpetclinicapigateway: 0.22.0
