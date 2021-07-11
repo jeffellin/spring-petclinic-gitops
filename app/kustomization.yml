@@ -14,7 +14,7 @@ images:
 - digest: sha256:14b1e2c570995d01ccb5a7dde99edec14afb037b25a877e88be008a77fc1dc9b
   name: spring-petclinic-vets-service
   newName: harbor.ellin.net/dev/spring-petclinic-vets-service
-- digest: sha256:a6487451f6198ed39775e62528662bec48bfac5ef7f7fefe3b9c0c5c43e58d60
+- digest: sha256:d350aa647d1c9f1c31d5227b9f8292328fb52d47ad66974fb6bcd90d29e76e5f
   name: spring-petclinic-visits-service
   newName: harbor.ellin.net/dev/spring-petclinic-visits-service
 resources:
