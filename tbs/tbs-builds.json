@@ -5,7 +5,7 @@
    "builds":[
            {
                    "name":"spring-petclinic-config-server",
-                   "commit":"19fb5d84d43e3d0457773b01c9b4543df548d99e"
+                   "commit":"ab51a244b1fa4e2c37c3135f20b74d9f1925e1b7"
            },
            {
                    "name":"spring-petclinic-httpbin",
