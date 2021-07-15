@@ -11,7 +11,7 @@ images:
 - digest: sha256:61377087150467172c1a28c0107017badf0a37eb5d58d175d7364bf42c65f36a
   name: spring-petclinic-config-server
   newName: reg.ellin.net/stage/spring-petclinic-config-server
-- digest: sha256:8f08bbe254d98af971c5fa0b540c52f1760d184089de576e5464eca57a5e0f5d
+- digest: sha256:3b80b5a2fe902035f8671a1a5cc393f1186585f40ee74206955af52b879fd679
   name: spring-petclinic-httpbin
   newName: reg.ellin.net/stage/spring-petclinic-httpbin
 - digest: sha256:0b58fa9f97072a20806e3dca016787e7a6521a57e993d05ca432332024f0c2a0
