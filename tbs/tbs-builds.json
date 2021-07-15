@@ -17,11 +17,11 @@
            },
            {
                    "name":"spring-petclinic-vets-service",
-                   "commit":"0a2a7d6f8d8564d66afff88eb9510f3a2b14a820"
+                   "commit":"576167ba98d5f9755e37511f490625038d1314b2"
            },
            {
                    "name":"spring-petclinic-visits-service",
-                   "commit":"51ec59b452a098d442056219bf5e3570975b1a05"
+                   "commit":"22463dc689e1cd2e2ce195b76f4728504d5aae88"
            }
    ]
 }
