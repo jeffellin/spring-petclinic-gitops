@@ -14,6 +14,9 @@ images:
 - digest: sha256:8f08bbe254d98af971c5fa0b540c52f1760d184089de576e5464eca57a5e0f5d
   name: spring-petclinic-httpbin
   newName: reg.ellin.net/stage/spring-petclinic-httpbin
+- digest: sha256:0b58fa9f97072a20806e3dca016787e7a6521a57e993d05ca432332024f0c2a0
+  name: spring-petclinic-vets-service
+  newName: reg.ellin.net/stage/spring-petclinic-vets-service
 - digest: sha256:d350aa647d1c9f1c31d5227b9f8292328fb52d47ad66974fb6bcd90d29e76e5f
   name: spring-petclinic-visits-service
   newName: reg.ellin.net/stage/spring-petclinic-visits-service
