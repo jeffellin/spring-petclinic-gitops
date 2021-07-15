@@ -13,9 +13,9 @@ images:
 - digest: sha256:14b1e2c570995d01ccb5a7dde99edec14afb037b25a877e88be008a77fc1dc9b
   name: spring-petclinic-vets-service
   newName: harbor.ellin.net/dev/spring-petclinic-vets-service
-- digest: sha256:d350aa647d1c9f1c31d5227b9f8292328fb52d47ad66974fb6bcd90d29e76e5f
+- digest: sha256:2cb61285fa1657973db1937d7d4295e51a2a15720de24a7c2ca2a24aafa5c6da
   name: spring-petclinic-visits-service
-  newName: harbor.ellin.net/dev/spring-petclinic-visits-service
+  newName: reg.ellin.net/dev/spring-petclinic-visits-service
 resources:
 - config-server-deployment.yml
 - customer-service-deployment.yml
