@@ -1,7 +1,7 @@
 {
    "environment":"stage",
-   "namespace":"tbs-stage",
-   "registry":"harbor.ellin.net/stage",
+   "namespace":"default",
+   "registry":"reg.ellin.net/stage",
    "builds":[
            {
                    "name":"spring-petclinic-config-server",
@@ -13,7 +13,7 @@
            },
            {
                    "name":"spring-petclinic-api-gateway",
-                   "commit":"fdbee58d1da81a502b3b0ac4c6c53ed67e5d0c00"
+                   "commit":"7f67b370e19f91e2985045c1490b3de3a1cb875f"
            },
            {
                    "name":"spring-petclinic-vets-service",
